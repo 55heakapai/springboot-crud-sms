@@ -15,6 +15,5 @@ public class Admin {
     String name;
     String email;
     String mobileNumber; // mobile_number
-    String department;
     String role;         // e.g., SuperAdmin, Registrar, etc.
 }

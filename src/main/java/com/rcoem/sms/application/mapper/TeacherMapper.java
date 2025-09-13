@@ -12,6 +12,7 @@ public class TeacherMapper {
                 .name(teacher.getName())
                 .email(teacher.getEmail())
                 .mobileNumber(teacher.getMobileNumber())
+                .designation(teacher.getDesignation())
                 .department(teacher.getDepartment())
                 .subjectSpecialization(teacher.getSubjectSpecialization())
                 .build();
@@ -23,6 +24,7 @@ public class TeacherMapper {
                 .name(teacherDetails.getName())
                 .email(teacherDetails.getEmail())
                 .mobileNumber(teacherDetails.getMobileNumber())
+                .designation(teacherDetails.getDesignation())
                 .department(teacherDetails.getDepartment())
                 .subjectSpecialization(teacherDetails.getSubjectSpecialization())
                 .build();

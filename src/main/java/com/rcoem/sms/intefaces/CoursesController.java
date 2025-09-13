@@ -39,4 +39,12 @@ public class CoursesController {
         CourseDetails updatedCourse = courseService.updateCourseById(courseDetails);
         return updatedCourse == null ? ResponseEntity.notFound().build() : ResponseEntity.ok(updatedCourse);
     }
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deleteCourse(@PathVariable String id) {
+        courseService.deleteCourseById(id);
+        return ResponseEntity.ok("Course deleted successfully: " + id);
+    }
+
+
+
 }

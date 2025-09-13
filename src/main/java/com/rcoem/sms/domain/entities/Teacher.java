@@ -17,6 +17,5 @@ public class Teacher{
     String mobileNumber;  // mobile_number
     String department;
     String designation;   // e.g., Assistant Professor, HOD
-    String specialization;
     private String subjectSpecialization;
 }

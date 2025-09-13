@@ -11,21 +11,26 @@ public class StudentMapper {
                 .id(studentInfo.getId())
                 .rollNo(studentInfo.getRollNo())
                 .name(studentInfo.getName())
+                .course(studentInfo.getCourse())
                 .email(studentInfo.getEmail())
+                .mobileNumber(studentInfo.getMobileNumber())
                 .department(studentInfo.getDepartment())
                 .gender(studentInfo.getGender())
-                .course(studentInfo.getCourse())
+                .dateOfBirth(studentInfo.getDateOfBirth())
                 .build();
     }
+
     public StudentInfo toEntity(StudentDetails studentDetails) {
         return StudentInfo.builder()
                 .id(studentDetails.getId())
                 .rollNo(studentDetails.getRollNo())
                 .name(studentDetails.getName())
+                .course(studentDetails.getCourse())
                 .email(studentDetails.getEmail())
+                .mobileNumber(studentDetails.getMobileNumber())
                 .department(studentDetails.getDepartment())
                 .gender(studentDetails.getGender())
-                .course(studentDetails.getCourse())
+                .dateOfBirth(studentDetails.getDateOfBirth())
                 .build();
     }
 }

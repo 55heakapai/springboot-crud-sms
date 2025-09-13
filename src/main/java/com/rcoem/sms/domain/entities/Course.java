@@ -16,6 +16,5 @@ public class Course {
     String courseName;   // course_name
     String department;
     Integer credits;
-    private String name;
     private String description;
 }

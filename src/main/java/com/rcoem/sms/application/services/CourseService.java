@@ -8,5 +8,5 @@ public interface CourseService {
     CourseDetails createCourse(CourseDetails courseDetails);
     CourseDetails getCourseById(String id);
     CourseDetails updateCourseById(CourseDetails courseDetails);
-    void deleteCourseById(CourseDetails courseDetails);
+    void deleteCourseById(String id);
 }

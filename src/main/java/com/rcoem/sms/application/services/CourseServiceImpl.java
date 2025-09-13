@@ -49,7 +49,8 @@ public class CourseServiceImpl implements CourseService {
     }
 
     @Override
-    public void deleteCourseById(CourseDetails courseDetails) {
-        courseRepository.delete(courseMapper.toEntity(courseDetails));
+    public void deleteCourseById(String id) {
+        courseRepository.deleteById(id);
     }
+
 }

@@ -9,7 +9,8 @@ public class CourseMapper {
     public CourseDetails toDto(Course course) {
         return CourseDetails.builder()
                 .id(course.getId())
-                .name(course.getName())
+                .courseCode(course.getCourseCode())
+                .courseName(course.getCourseName())
                 .description(course.getDescription())
                 .department(course.getDepartment())
                 .build();
@@ -18,7 +19,8 @@ public class CourseMapper {
     public Course toEntity(CourseDetails courseDetails) {
         return Course.builder()
                 .id(courseDetails.getId())
-                .name(courseDetails.getName())
+                .courseCode(courseDetails.getCourseCode())
+                .courseName(courseDetails.getCourseName())
                 .description(courseDetails.getDescription())
                 .department(courseDetails.getDepartment())
                 .build();

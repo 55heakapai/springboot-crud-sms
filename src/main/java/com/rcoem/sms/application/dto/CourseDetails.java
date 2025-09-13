@@ -9,7 +9,8 @@ import lombok.*;
 @Builder
 public class CourseDetails {
     private String id;
-    private String name;
+    private String courseCode;
+    private String courseName;
     private String description;
     private String department;
 }
